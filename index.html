@@ -25,7 +25,8 @@
                     colors: {
                         clifford: '#da373d',
                         'banner-btn': '#F85559',
-                        'footer' : '#121212'
+                        'footer': '#121212',
+                        'nav': '#F85559',
                     }
                 }
             }
@@ -43,6 +44,71 @@
 <body class="lato">
     <header class="max-w-6xl mx-auto">
         <!-- nav -->
+        <!-- Mobile -->
+        <section class="lg:hidden">
+            <div class="navbar w-4/5 m-auto ">
+                <div class="navbar-start">
+                    <div class="flex">
+                        <img class="w-5 lg:w-9" src="./images/logo.png" alt="" />
+                        <h4 class="text-lg lg:text-4xl font-bold text-black lg:text-[#FFF]">
+                            Fruit Burst
+                        </h4>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 relative right-8 top-5">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Large -->
+        <section class="hidden lg:flex ">
+            <div class="navbar my-5 lg:bg-[#F85559] lg:rounded-[500px] px-4  gap-40 lg:gap-0">
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-white">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                    <div class="flex">
+                        <img class="w-5 lg:w-9" src="./images/logo.png" alt="" />
+                        <h4 class="text-lg lg:text-3xl font-bold text-black lg:text-[#FFF]">
+                            Fruit Burst
+                        </h4>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <div class="">
+                        <input type="text" placeholder="Search here"
+                            class="input input-bordered lg:w-72 md:w-auto text-black bg-[#FFF] rounded-3xl" />
+                        <i class="fa-solid fa-magnifying-glass absolute text-center top-11 right-40 text-[#121212]"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
 
 
         <!-- banner -->
@@ -178,6 +244,8 @@
         </section>
 
     </header>
+
+
     <main class="max-w-6xl mx-auto">
         <section class=" my-8  lg:my-28">
             <div>
@@ -738,7 +806,7 @@
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits..</p>
                         </div>
                         <div>
-                        <i class="fa-solid fa-apple-whole p-3 bg-gray-200 rounded-full"></i>
+                            <i class="fa-solid fa-apple-whole p-3 bg-gray-200 rounded-full"></i>
                         </div>
                     </div>
 
@@ -861,7 +929,7 @@
 
                             <i class="fa-solid fa-ice-cream p-3 bg-gray-200 rounded-full text-xl mt-4"></i>
 
-                            <h2 class="font-extrabold text-3xl text-black">Sustainable Practice</h2> <br>
+                            <h2 class="font-extrabold text-3xl -mt-7 text-black">Sustainable Practice</h2> <br>
                             <hr class="border border-[#121212CC] -mt-7 w-[100px]">
 
                             <p class="w-[256px] text-center">Professional employees are there for you to pick the most
@@ -878,7 +946,8 @@
                             <h2 class="font-extrabold text-3xl text-black">The Benefits Only</h2> <br>
                             <hr class="border border-[#121212CC] -mt-7 w-[100px]">
 
-                            <p class="w-[256px] text-center mb-6">Professional employees are there for you to pick the most
+                            <p class="w-[256px] text-center mb-6">Professional employees are there for you to pick the
+                                most
                                 amazing and fresh fruits.</p>
 
 
@@ -908,22 +977,22 @@
         </div>
 
         <div class="lg:grid lg:grid-flow-col gap-4 text-white grid-cols-3">
-          <a class="link link-hover">Home</a> 
-          <a class="link link-hover">About us</a> 
-          <a class="link link-hover">Shop</a> 
-          <a class="link link-hover">All Fruits</a> 
-          <a class="link link-hover">Support</a>
-          <a class="link link-hover">My Account</a>
-        </div> 
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover">All Fruits</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">My Account</a>
+        </div>
         <div>
-          <div class="grid grid-flow-col gap-4 text-white text-xl">
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a> 
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-          </div>
-        </div> 
-      </footer>
+            <div class="grid grid-flow-col gap-4 text-white text-xl">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
